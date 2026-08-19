@@ -1,0 +1,250 @@
+:root {
+    --primary-color: #12021C;
+    --letters-color: #A08FFA;
+    --purple-color: #660066;
+    --white-color: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;     
+    z-index: 1000;
+    background-color: var(--primary-color);
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    padding-right: 5rem;
+}
+
+.menu ul li a {
+    display: block;
+    position: relative;
+    padding: 2rem 1.5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--white-color);
+    transition: 0.3s ease-in-out;
+}
+
+.menu ul li a:hover {
+    background-color: var(--white-color);
+    color: var(--purple-color);
+}
+
+.section {
+    padding: 5rem 5rem;
+    min-height: 100vh;
+}
+
+#home {
+    padding-top: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-background {
+    background-color: var(--primary-color);
+}
+
+.purple-background {
+    background-color: var(--purple-color);
+    color: var(--white-color);
+}
+
+.purple-background h2 {
+    color: var(--letters-color);
+}
+
+.projetos-pessoais-content h2, .projetos-pessoais-content h3 {
+    color: var(--letters-color);
+}
+
+.projetos-pessoais-content p {
+    color: var(--white-color);
+}
+
+.links-content h3 {
+    color: var(--letters-color);
+}
+
+.intro-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.intro-img img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.intro-text-content {
+    color: var(--letters-color);
+}
+
+.intro-text-content h1 {
+    font-size: 5rem;
+}
+
+.intro-text-content p {
+    font-size: 3rem;
+    color: var(--white-color);
+}
+
+.sobremim-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.left-text h2 {
+    font-size: 50px;
+}
+
+.left-text p {
+    font-size: 25px;
+    text-align: justify;
+}
+
+.right-img img {
+    border-radius: 8px;
+    place-items: center;
+}
+
+.conhecimentos-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; 
+}
+
+.conhecimentos-content h2, .projetos-pessoais-content h2 {
+    grid-column: 1 / -1; 
+    font-size: 50px;
+    color: var(--letters-color);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.div-back-end, .div-front-end {
+    text-align: center;
+    border-radius: 8px;
+    padding: 30px 20px;
+}
+
+.div-back-end h3, .div-front-end h3 {
+    font-size: 35px;
+    color: var(--letters-color);
+}
+
+.div-back-end p, .div-front-end p {
+    font-size: 20px;
+}
+
+.purple-background .div-back-end, .purple-background .div-front-end {
+    flex: 1;
+}
+
+.projetos-pessoais-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.projeto-1, .projeto-2, .projeto-3 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid var(--white-color);
+    padding: 30px 20px;
+}
+
+.projeto-1-text, .projeto-2-text, .projeto-3-text {
+    margin-top: auto;
+} 
+
+.projeto-1 img, .projeto-2 img, .projeto-3 img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.links-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 50px; 
+    margin-top: 5rem;
+}
+
+.links {
+    border: 0.5px solid var(--white-color);
+    border-radius: 8px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.links img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+.links-content h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    padding: 20px 0 40px 0;
+}
+
+.links-content h3 {
+    font-size: 70px;
+    padding: 30px 0 50px 0;
+}
+
+.links-content p {
+    font-size: 32px;
+    padding: 10px 0 20px 0;
+}
+
+.links-content-image img {
+    width: 500px;
+    height: 500px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
